@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.icon {
+    @apply  text-dark_green mr-2 text-xl group-hover:text-black  group-hover:ml-2;
+}
+
+
+.icon-hover > i,  a {
+    @apply group-hover:text-black group-hover:font-extrabold ease-in-out duration-200;
+}

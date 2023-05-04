@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tailwind project</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./../dist/out.css" />
+    </head>
+    <body class="h-full w-full bg-black">
+        <header></header>
+        <main class="w-full h-full flex flex-row-reverse">
+            <aside class="w-1/7 bg-gray h-screen min-w-fit border-l-black border-l-2 hidden md:block">
+                <div class="flex flex-col p-12 text-white">
+                    <img src="assets/img/icon.jpg" class="w-40 h-40 self-center rounded-full border-4 border-green" />
+                    <div class="flex flex-col items-center mt-5 gap-1">
+                        <h2 class="font-bold text-xl">Daniel Maturano</h2>
+                        <h3 class="text-white/50">programmer</h3>
+                    </div>
+                    <ul class="flex flex-col justify-center p-2 mt-10 uppercase gap-5">
+                        <li class="icon-hover group">
+                            <i class="fa-solid fa-house-chimney icon"></i>
+                            <a href="">home</a>
+                        </li>
+                        <li class="icon-hover group">
+                            <i class="fa-solid fa-gear icon"></i>
+                            <a href="" class="">settings</a>
+                        </li>
+                        <li class="icon-hover group">
+                            <i class="fa-solid fa-phone icon"></i>
+                            <a href="">calls</a>
+                        </li>
+                        <li class="icon-hover group">
+                            <i class="fa-solid fa-message icon"></i>
+                            <a href="">messages</a>
+                        </li>
+                        <li class="icon-hover group">
+                            <i class="fa-solid fa-user-group icon"></i>
+                            <a href="">friends</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <section class="flex-1 items-stretch flex flex-col justify-between h-screen">
+                 <div class="w-full  bg-gray flex p-1 sm:p-3 px-2 sm:px-5 flex-row items-center justify-between">
+                    <div class="flex flex-row items-center gap-5 min-w-fit">
+                        <img src="./assets/img/pica_pau.jpg" class="w-10 h-10 sm:w-20 sm:h-20 rounded-full border-dark_green border-4"/>
+                        <div class="flex justify-start flex-col">
+                            <h2 class="font-semibold text-white ">Pica Pau</h2>
+                            <p class="font-light text-white/75">online</p>
+                        </div>  
+                    </div>
+                    <div class="px-1 flex flex-row gap-5 text-green"> 
+                        <button>
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-video"></i>
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-ellipsis-vertical sm:hidden"></i>
+                        </button> 
+                    </div>
+                </div>
+                <div class="w-full h-full p-6 gap-5 flex flex-col">
+                    <div class="text-white bg-gray w-fit p-2 rounded-lg flex flex-row gap-2 rounded-tl-none max-w-[50%]">
+                       <p>Hi, mate!</p> 
+                       <p class="text-[10px] self-end ">6:58PM</p>
+                    </div>
+                    <div class="text-white bg-dark_green w-fit p-2 rounded-lg flex-row flex gap-2 rounded-tr-none
+                                self-end ">
+                        <p>Sup, how are you doing?</p> 
+                        <p class="text-[10px] self-end ">7:00PM</p>
+                    </div>
+                </div>
+                <div class=" p-1 sm:h-20 bg-gray w-full flex items-center justify-center">
+                    <button class="flex text-center text-base bg-dark_green p-2">
+                        <i class="fa-solid fa-paper-plane text-white"></i>
+                    </button>
+                    <input type="text" class="w-3/4 sm:w-11/12 text-base p-1 bg-black text-white outline-none font-bold" />
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
